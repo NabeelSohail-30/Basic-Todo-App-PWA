@@ -29,6 +29,8 @@ header {
     display: flex;
     justify-content: center;
     padding: 40px;
+    font-size: 36px;
+    font-weight: bolder;
 }
 
 .container {
@@ -76,22 +78,22 @@ header {
 
 .todoList {
     background-color: var(--white);
-    display: flex;
-    justify-content: center;
     padding: 20px;
     border-radius: 8px;
     margin: auto;
     margin-bottom: 160px;
-    width: 60%;
+    width: 50%;
+}
+
+.container-fluid {
+    width: 80%;
 }
 
 .todo {
     border: 4px solid var(--dark);
-    width: 80%;
+    width: 100%;
     padding: 12px;
     border-radius: 12px;
-    display: flex;
-    justify-content: center;
 }
 
 .btn-del {
