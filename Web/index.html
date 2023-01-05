@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do App</title>
+</head>
+
+<body>
+
+    <header>Header </header>
+
+    <div class="wrapper">
+        <form method="post">
+            <div class="container">
+
+                <div class="row mt-0">
+                    <div class="col">
+                        <div class="head">
+                            Product Details
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <input type="text" name="" id="productId" hidden>
+                            <label for="">Product Name</label>
+                            <input type="text" id="name" placeholder="Product Name" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Product Pice</label>
+                            <input type="text" id="price" placeholder="Product Price" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Product Category</label>
+                            <input type="text" id="cat" placeholder="Product Category" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Product Description</label>
+                            <input type="text" id="desc" placeholder="Product Description" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <button type="submit" class="btn-add" onclick="addProduct(); return false">Add Product</button>
+                        <button class='btn-update' id="btnUpdate" onclick="updateProduct(); return false">Update
+                            <button class='btn-cancel' id="btnCancel" onclick="cancel(); return false">Cancel
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <section>
+        <div id="productList" class="productList"></div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col watermark">
+                    Developed and Maintained by Nabeel Sohail
+                </div>
+            </div>
+            <div class="row">
+                <div class="col copyright">
+                    Copyright &copy; - All Rights Reserved
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col portfolio">
+                    <a href="https://nabeelsohail2630.wixsite.com/portfolio"
+                        target="_blank">nabeelsohail2630.wixsite.com/portfolio</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col social">
+                    <ul class="media-icons">
+                        <li><a href="https://github.com/NabeelSohail-30" target="_blank"><img src="img/github.png"
+                                    alt=""></a></li>
+                        <li><a href="https://www.linkedin.com/in/nabeel-sohail-a63508200/" target="_blank"><img
+                                    src="img/linkedin.png" alt=""></a></li>
+                        <li><a href="https://wa.me/923453628868" target="_blank"><img src="img/whatsapp.png" alt=""></a>
+                        </li>
+                        <li><a href="mailto:nabeel.sohail2630@outlook.com"><img src="img/email.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js" defer></script>
+</body>
+
+</html>
