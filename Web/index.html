@@ -12,72 +12,41 @@
 
 <body>
 
-    <header>Header </header>
+    <header>
+        To Do App
+    </header>
 
-    <div class="wrapper">
-        <form method="post">
-            <div class="container">
-
-                <div class="row mt-0">
-                    <div class="col">
-                        <div class="head">
-                            Product Details
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row newTodo">
+            <div class="col-10">
+                <div class="form-group">
+                    <input type="text" class="inputTodo form-control" id="txtTodo" placeholder="Add Todo">
                 </div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="" id="productId" hidden>
-                            <label for="">Product Name</label>
-                            <input type="text" id="name" placeholder="Product Name" class="form-control">
-                        </div>
-                    </div>
+            </div>
+            <div class="col-2">
+                <div class="form-group">
+                    <button type="submit" class="btn-add form-control" onclick="addTodo(); return false">Add</button>
                 </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="todoList">
+        <div class="todo">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="">Product Pice</label>
-                            <input type="text" id="price" placeholder="Product Price" class="form-control">
-                        </div>
+                    <div class="col-11">
+                        sample todo
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="">Product Category</label>
-                            <input type="text" id="cat" placeholder="Product Category" class="form-control">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="">Product Description</label>
-                            <input type="text" id="desc" placeholder="Product Description" class="form-control">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col d-flex justify-content-center">
-                        <button type="submit" class="btn-add" onclick="addProduct(); return false">Add Product</button>
-                        <button class='btn-update' id="btnUpdate" onclick="updateProduct(); return false">Update
-                            <button class='btn-cancel' id="btnCancel" onclick="cancel(); return false">Cancel
-                            </button>
+                    <div class="col-1">
+                        <button class="btn-del">
+                            <img src="img/email.png" alt="">
+                        </button>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
-
-    <section>
-        <div id="productList" class="productList"></div>
-    </section>
 
     <footer>
         <div class="container-fluid">

@@ -1,10 +1,10 @@
 /*------------------------Initial---------------------*/
 :root {
-    --dark: #56666B;
-    --darker: #2F394D;
+    --dark: #004386;
     --white: #ffffff;
-    --light: #E0EEC6;
+    --light: #066acd;
     --black: #000000;
+    --lightGrey: #d1d3d4;
 }
 
 * {
@@ -21,161 +21,94 @@ body {
     font-size: 18px;
 }
 
-/*------------------------header----------------------*/
+/*------------------------header-------------------*/
 
 header {
-    background-color: var(--darker);
-    color: var(--white);
+    background-color: var(--dark);
+    color: white;
     display: flex;
     justify-content: center;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 40px;
 }
 
-/*-------------------------Wrapper------------------*/
-
-.wrapper {
-    background-color: var(--dark);
-    width: 40%;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 6px;
+.container {
+    width: 50%;
 }
 
-.wrapper .container {
-    width: 90%;
-    margin: auto;
-    padding-top: 0px;
-}
+/*------------------new todo-------------------*/
 
-.wrapper .container .head {
-    text-align: center;
-    font-size: 34px;
-    font-weight: bold;
-    background-color: var(--darker);
-    color: var(--light);
-    width: fit-content;
-    margin: auto;
-    padding: 10px 40px;
+.newTodo {
+    background: white;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: auto;
+    margin-top: 160px;
+    margin-bottom: 60px;
+    padding: 40px;
 }
 
-.wrapper .container .row {
-    margin-top: 16px;
+.inputTodo {
+    border: 2px solid var(--lightGrey);
+    height: 50px;
 }
 
-.wrapper label {
-    color: var(--light);
-    font-weight: bold;
+.inputTodo:focus {
+    outline: none;
+    border: 2px solid var(--light);
 }
 
-.wrapper input {
-    color: var(--darker);
-    font-weight: 600;
-}
-
-.btn-add,
-.btn-update,
-.btn-cancel {
-    background-color: var(--light);
-    color: var(--darker);
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-weight: bold;
-    border-radius: 20px;
-    border: 3px solid var(--darker);
-}
-
-.btn-add:hover,
-.btn-update:hover,
-.btn-cancel:hover {
-    background-color: var(--darker);
-    color: var(--light);
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-weight: bold;
-    border-radius: 20px;
-    border: 3px solid var(--white);
-}
-
-
-/*-----------------------Section/Product List-----------------------------*/
-
-section {
+.btn-add {
     background-color: var(--dark);
+    color: var(--white);
+    padding: 12px 26px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-.productList {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    overflow: auto;
-    flex-basis: auto;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 20px;
+.btn-add:hover {
+    background-color: var(--light);
+    color: var(--white);
+    padding: 12px 26px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-.pr_card {
-    border: 4px solid var(--darker);
-    padding: 20px;
-    margin: 20px;
+/*-------------------------todo list-------------------*/
+
+.todoList {
     background-color: var(--white);
     display: flex;
-    flex-direction: column;
-    width: 340px;
-    border-radius: 4px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 160px;
+    width: 60%;
 }
 
-.action {
+.todo {
+    border: 4px solid var(--dark);
+    width: 80%;
+    padding: 12px;
+    border-radius: 12px;
     display: flex;
     justify-content: center;
-    margin-top: 14px;
 }
 
-.btn-edit,
 .btn-del {
-    background-color: var(--dark);
-    padding: 4px 16px;
-    margin: auto 10px;
-    border: 3px solid var(--darker);
-    border-radius: 14px;
-    color: var(--light);
-    font-weight: 500;
+    border: none;
+    outline: none;
 }
 
-.btn-edit:hover,
-.btn-del:hover {
-    background-color: var(--light);
-    padding: 4px 16px;
-    margin: auto 10px;
-    border: 3px solid var(--darker);
-    border-radius: 14px;
-    color: var(--darker);
-    font-weight: 500;
-}
-
-.btn-update {
-    display: none;
-}
-
-.prName {
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
-    margin-bottom: 16px;
-    background-color: var(--darker);
-    color: var(--light);
-    padding: 4px 10px;
-    border-radius: 4px;
+.btn-del img {
+    width: 26px;
+    height: 26px;
 }
 
 /*------------------------footer---------------------*/
 
 footer {
-    background-color: var(--darker);
-    color: var(--light);
+    background-color: var(--dark);
+    color: var(--white);
     display: flex;
     justify-content: center;
     height: fit-content;
@@ -206,7 +139,7 @@ footer {
     font-weight: 400;
     margin-top: 14px;
     text-decoration: none;
-    color: var(--light);
+    color: var(--white);
     display: flex;
     justify-content: center;
     margin-bottom: 14px;
@@ -231,8 +164,9 @@ footer {
 hr {
     width: 100vh;
     margin: auto;
-    background-color: var(--light);
+    background-color: var(--white);
 }
+
 
 /*-----------------------Responsive-------------------*/
 
