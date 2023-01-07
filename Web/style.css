@@ -44,7 +44,7 @@ header {
     border-radius: 10px;
     margin: auto;
     margin-top: 160px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding: 40px;
 }
 
@@ -87,6 +87,7 @@ header {
 
 .container-fluid {
     width: 80%;
+    margin-top: 20px;
 }
 
 .todo {
@@ -94,6 +95,7 @@ header {
     width: 100%;
     padding: 12px;
     border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .btn-del {
@@ -104,6 +106,13 @@ header {
 .btn-del img {
     width: 26px;
     height: 26px;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    margin: 30px auto;
 }
 
 /*------------------------footer---------------------*/

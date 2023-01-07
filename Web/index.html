@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <title>To Do App</title>
 </head>
 
@@ -16,26 +17,32 @@
         Todo App
     </header>
 
-    <div class="container">
-        <div class="row newTodo">
-            <div class="col-10">
-                <div class="form-group">
-                    <input type="text" class="inputTodo form-control" id="txtTodo" placeholder="Add Todo">
+    <form onsubmit="addTodo(); return false" action="post">
+        <div class="container">
+            <div class="row newTodo">
+                <div class="col-10">
+                    <div class="form-group">
+                        <input type="text" class="inputTodo form-control" id="txtTodo" placeholder="Add Todo">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <button type="submit" class="btn-add form-control">Add</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="form-group">
-                    <button type="submit" class="btn-add form-control" onclick="addTodo(); return false">Add</button>
+            <div class="row">
+                <div class="col error">
+                    <div class="form-group">
+                        <span id="todoError"></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 
     <div class="todoList">
-        <div class="container-fluid">
-            <div class="todo" id="#todoList">
-
-            </div>
+        <div class="container-fluid todoContainer">
         </div>
     </div>
 
@@ -77,9 +84,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js" defer></script>
 </body>
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="./app.js" defer></script>
 
 </html>
