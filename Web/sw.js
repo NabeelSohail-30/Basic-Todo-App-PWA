@@ -7,7 +7,7 @@ importScripts(
 );
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = "./pwa/offline.html";
+const offlineFallbackPage = "./PWA/offline.html";
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
