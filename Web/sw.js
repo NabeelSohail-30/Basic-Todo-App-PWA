@@ -33,7 +33,7 @@ workbox.routing.registerRoute(
   })
 );
 
-self.addEventListener('fetch', (event) => {
+/* self.addEventListener('fetch', (event) => {
   if (event.request.mode === 'navigate') {
     event.respondWith((async () => {
       try {
@@ -53,4 +53,4 @@ self.addEventListener('fetch', (event) => {
       }
     })());
   }
-});
+}); */
