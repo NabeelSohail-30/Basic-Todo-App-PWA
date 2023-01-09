@@ -46,6 +46,8 @@ header {
     margin-top: 160px;
     margin-bottom: 40px;
     padding: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .inputTodo {
@@ -64,6 +66,7 @@ header {
     padding: 12px 26px;
     border-radius: 6px;
     font-weight: bold;
+    text-align: center;
 }
 
 .btn-add:hover {
@@ -72,6 +75,7 @@ header {
     padding: 12px 26px;
     border-radius: 6px;
     font-weight: bold;
+    text-align: center;
 }
 
 /*-------------------------todo list-------------------*/
@@ -181,17 +185,99 @@ hr {
 
 /*-----------------------Responsive-------------------*/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 481px) {
+    body {
+        background-color: red;
+    }
+}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 481px) and (max-width: 576px) {
+    body {
+        background-color: cyan;
+    }
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    body {
+        background-color: red;
+    }
+}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-color: peru;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+    .container {
+        width: 80%;
+        padding: 0px;
+    }
+
+    .newTodo {
+        padding: 30px;
+    }
+
+    /*-------------------------todo list-------------------*/
+
+    .todoList {
+        width: 85%;
+        padding: 14px 0px;
+    }
+
+    .container-fluid {
+        width: 85%;
+    }
+
+    .del-img {
+        display: flex;
+        justify-content: end;
+    }
+
+    .container-fluid .row {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+
+    .container {
+        width: 60%;
+    }
+
+    .newTodo {
+        padding: 30px 24px;
+    }
+
+    /*-------------------------todo list-------------------*/
+
+    .todoList {
+        width: 80%;
+        padding: 14px 0px;
+    }
+
+    .container-fluid {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+    body {
+        background-color: purple;
+    }
+
+    .container {
+        width: 55%;
+    }
+
+    /*-------------------------todo list-------------------*/
+
+    .todoList {
+        background-color: var(--white);
+        padding: 20px;
+        border-radius: 8px;
+        margin: auto;
+        margin-bottom: 160px;
+        width: 55%;
+    }
+}
