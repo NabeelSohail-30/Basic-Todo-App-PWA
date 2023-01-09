@@ -185,13 +185,17 @@ hr {
 
 /*-----------------------Responsive-------------------*/
 @media only screen and (max-width: 370px) {
+    header {
+        font-size: 26px;
+    }
+
     .container {
-        width: 98%;
+        width: 100%;
     }
 
     .btn-add {
         margin-top: 26px;
-        width: 40%;
+        width: 60%;
     }
 
     .col-btn-add {
@@ -200,7 +204,7 @@ hr {
     }
 
     .newTodo {
-        padding: 26px 10px;
+        padding: 14px 4px;
     }
 
     .todoList {
@@ -223,7 +227,7 @@ hr {
     }
 
     hr {
-        width: 20vh;
+        width: 16vh;
         margin: auto;
         background-color: var(--white);
     }
@@ -415,6 +419,11 @@ hr {
         margin: auto;
         background-color: var(--white);
     }
+
+    .del-img {
+        display: flex;
+        justify-content: end;
+    }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1500px) {
@@ -431,5 +440,30 @@ hr {
         margin: auto;
         margin-bottom: 160px;
         width: 55%;
+    }
+
+    .del-img {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .container {
+        width: 55%;
+    }
+
+    .todoList {
+        background-color: var(--white);
+        padding: 20px;
+        border-radius: 8px;
+        margin: auto;
+        margin-bottom: 160px;
+        width: 55%;
+    }
+
+    .del-img {
+        display: flex;
+        justify-content: end;
     }
 }
