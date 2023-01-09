@@ -184,30 +184,174 @@ hr {
 
 
 /*-----------------------Responsive-------------------*/
+@media only screen and (max-width: 370px) {
+    .container {
+        width: 98%;
+    }
 
-@media only screen and (max-width: 481px) {
-    body {
-        background-color: red;
+    .btn-add {
+        margin-top: 26px;
+        width: 40%;
+    }
+
+    .col-btn-add {
+        display: flex;
+        justify-content: center;
+    }
+
+    .newTodo {
+        padding: 26px 10px;
+    }
+
+    .todoList {
+        width: 100%;
+    }
+
+    .container-fluid {
+        width: 100%;
+    }
+
+    .del-img-sm {
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+    }
+
+    .container-fluid .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    hr {
+        width: 20vh;
+        margin: auto;
+        background-color: var(--white);
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 481px) {
+    .container {
+        width: 95%;
+    }
+
+    .btn-add {
+        margin-top: 26px;
+        width: 40%;
+    }
+
+    .col-btn-add {
+        display: flex;
+        justify-content: center;
+    }
+
+    .newTodo {
+        padding: 26px 14px;
+    }
+
+    .todoList {
+        width: 95%;
+    }
+
+    .container-fluid {
+        width: 100%;
+    }
+
+    .del-img {
+        display: flex;
+        justify-content: end;
+    }
+
+    .container-fluid .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    hr {
+        width: 20vh;
+        margin: auto;
+        background-color: var(--white);
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 576px) {
-    body {
-        background-color: cyan;
+    .container {
+        width: 90%;
+    }
+
+    .btn-add {
+        margin-top: 20px;
+        width: 25%;
+    }
+
+    .col-btn-add {
+        display: flex;
+        justify-content: center;
+    }
+
+    .newTodo {
+        padding: 26px 14px;
+    }
+
+    .todoList {
+        width: 90%;
+    }
+
+    .container-fluid {
+        width: 95%;
+    }
+
+    .del-img {
+        display: flex;
+        justify-content: end;
+    }
+
+    .container-fluid .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    hr {
+        width: 30vh;
+        margin: auto;
+        background-color: var(--white);
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-    body {
-        background-color: red;
+    .container {
+        width: 100%;
+    }
+
+    .newTodo {
+        padding: 26px 14px;
+    }
+
+    .todoList {
+        width: 90%;
+    }
+
+    .container-fluid {
+        width: 95%;
+    }
+
+    .del-img {
+        display: flex;
+        justify-content: end;
+    }
+
+    .container-fluid .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    hr {
+        width: 30vh;
+        margin: auto;
+        background-color: var(--white);
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        background-color: peru;
-    }
-
     .container {
         width: 80%;
         padding: 0px;
@@ -237,6 +381,12 @@ hr {
         display: flex;
         justify-content: center;
     }
+
+    hr {
+        width: 40vh;
+        margin: auto;
+        background-color: var(--white);
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
@@ -259,13 +409,15 @@ hr {
     .container-fluid {
         width: 85%;
     }
+
+    hr {
+        width: 50vh;
+        margin: auto;
+        background-color: var(--white);
+    }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1500px) {
-    body {
-        background-color: purple;
-    }
-
     .container {
         width: 55%;
     }

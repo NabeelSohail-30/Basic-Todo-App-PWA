@@ -32,7 +32,7 @@ let getAllTodos = () => {
                                 ${eachTodo.todo}
                                 </label>
                             </div>
-                            <div class="col-1 col-sm-2 del-img">
+                            <div class="col col-sm-2 del-img del-img-sm">
                                 <button class="btn-del" onclick="deleteTodo('${eachTodo._id}')">
                                     <img src="img/delete.png" alt="">
                                 </button>
